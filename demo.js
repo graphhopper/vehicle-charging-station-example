@@ -48,6 +48,7 @@ $(document).ready(function (e) {
             c = station.geometry.coordinates[0][0];
         }
         var p = new L.LatLng(c[1], c[0]);
+        p.osm_link = "https://www.openstreetmap.org/" + station.id;
         if (p.distanceTo(center) < filterDistance) {
             stations.push(p);
         }
@@ -146,7 +147,7 @@ $(document).ready(function (e) {
                                 routingMap.fitBounds(tmpB);
                             }
 
-                            var outHtml = "Best station picked from " + stations.length + " stations";
+                            var outHtml = "<a href=" + stations[bestStationIndex].osm_link + ">Best station<a> picked from " + stations.length + " stations";
                             outHtml += "<br/><b>Best</b> distance in km:" + Math.floor(path.distance / 1000);
                             outHtml += ", time in minutes:" + Math.floor(path.time / 1000 / 60);
 
