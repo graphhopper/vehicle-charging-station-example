@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Best Detour to Charging Station</title>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script type="text/javascript" src="https://raw.githubusercontent.com/graphhopper/directions-api-js-client/master/js/GHUtil.js"></script>
+        <script type="text/javascript" src="https://raw.githubusercontent.com/graphhopper/directions-api-js-client/master/js/GraphHopperRouting.js"></script>
+        <script type="text/javascript" src="https://raw.githubusercontent.com/graphhopper/directions-api-js-client/master/js/GraphHopperMatrix.js"></script>        
+
+        <script type="text/javascript" src="charging_stations_export.js"></script>        
+        <script type="text/javascript" src="demo.js"></script>
+    </head>
+    <body>
+        <div style="width: 850px; margin: auto;">
+            <h2>Best detour to charging station</h2>
+            <div id="matrix-error" style="color: red"></div>
+            <div id="response" style="float: right;"></div>        
+            <div id="routing-map" style="width: 800px; height: 600px"></div>        
+        </div>
+    </body>
+</html>
