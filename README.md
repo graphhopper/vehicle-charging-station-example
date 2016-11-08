@@ -8,3 +8,5 @@ Get an API key [here](https://graphhopper.com/dashboard/) and put it in the demo
 ```javascript
 var defaultKey = "abc";
 ```
+
+And open the index.html in your browser, e.g. `firefox index.html`
